@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './Header';
 import NewsBar from './NewsBar';
+import PickOrder from './PickOrder';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
