@@ -10,6 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Header />
     <NewsBar />
+    <PickOrder />
   </React.StrictMode>,
   document.getElementById('root')
 );
