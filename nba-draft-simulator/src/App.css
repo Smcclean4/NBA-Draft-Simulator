@@ -26,6 +26,14 @@
   color:whitesmoke;
 }
 
+.PickOrder {
+  padding:40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
 .Img {
   height:290px;
   width:550px;
