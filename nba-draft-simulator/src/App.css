@@ -40,6 +40,15 @@
 
 .DraftPlayers {
   font-size: 22px;
+  width: auto;
   height:400px;
-  border: 1px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-content: space-around;
+}
+
+.playerName {
+  padding:7px;
+  list-style-type: none;
 }
