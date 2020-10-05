@@ -36,5 +36,10 @@
 
 .Img {
   height:290px;
-  width:550px;
+}
+
+.DraftPlayers {
+  font-size: 22px;
+  height:400px;
+  border: 1px solid red;
 }
