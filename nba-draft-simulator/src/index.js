@@ -5,6 +5,7 @@ import Header from './Header';
 import NewsBar from './NewsBar';
 import PickOrder from './PickOrder';
 import DraftablePlayers from './DraftablePlayers';
+import YourTeam from './YourTeam';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <NewsBar />
     <PickOrder />
     <DraftablePlayers />
+    <YourTeam />
   </React.StrictMode>,
   document.getElementById('root')
 );
