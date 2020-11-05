@@ -55,17 +55,15 @@
 
 /* YOUR TEAM */
 
-.one {
-  display: inline-block;
-  margin: 90px 50px 50px 5%;
+.one-two {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: left;
 }
 
 .your-team {
   font-size:20px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: left;
-  width:auto;
+  width:210px;
   height:310px;
 }
 
@@ -80,25 +78,13 @@
 }
 
 .your-team-name {
-  margin:0 0 0 175px;
   color:white;
-  text-align:right;
+  text-align:center;
   background-color:rgb(0, 0, 161);
   border-radius: 0 0 25px 25px;
-  padding:5px 30px;
-}
-
-.two {
-  display:inline-block;
-  vertical-align:middle;
-  margin:0 5% 400px 50px;
+  padding:10px;
 }
 
 .your-draft-grade {
-  display:flex;
-  flex-flow:column wrap;
-  align-content:space-around;
-  justify-content: right;
-  width:auto;
-  height:auto;
+  
 }
