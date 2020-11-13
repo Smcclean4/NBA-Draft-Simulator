@@ -35,8 +35,8 @@ function YourTeam_DraftGrade () {
             <div className="your-draft-grade">
                 <h2>Curent NBA Draft Grade:</h2>
                 <p className="draft-grade">B+</p>
-                <button><a href="">Reset Draft Simulator</a></button>
-                <button><a href="">Generate Current Draft Class</a></button>
+                <button><a href="#">Reset Draft Simulator</a></button>
+                <button><a href="#">Generate Current Draft Class</a></button>
             </div>
         </div>
     );
