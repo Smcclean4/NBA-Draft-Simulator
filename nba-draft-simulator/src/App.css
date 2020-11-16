@@ -56,19 +56,15 @@
 /* YOUR TEAM */
 
 .one-two {
-  display: flex;
-  flex-flow: column wrap;
+  display:flex;
   border:1px solid red;
   text-align:center;
 }
 
-.your-team {
+.your-pick-ul {
   font-size:20px;
   width:210px;
   height:310px;
-}
-
-.your-pick-ul {
   border:5px solid black;
 }
 

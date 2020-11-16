@@ -5,9 +5,8 @@ function YourTeam_DraftGrade () {
 
     return (
         <div className="one-two flex-container">
-            <div className="your-team">
-                <div className="your-pick-ul">
-                    <ul>
+                
+                    <ul className="your-pick-ul">
                     <li className="your-pick">1. Player Name</li>
                     <li className="your-pick">2. Player Name</li>
                     <li className="your-pick">3. Player Name</li>
@@ -16,9 +15,9 @@ function YourTeam_DraftGrade () {
                     <li className="your-pick">6. Player Name</li>
                     <li className="your-pick">7. Player Name</li>
                     </ul>
-                </div>
-                <div className="your-pick-ul">
-                    <ul>
+                
+                
+                    <ul className="your-pick-ul">
                     <li className="your-pick">8. Player Name</li>
                     <li className="your-pick">9. Player Name</li>
                     <li className="your-pick">10. Player Name</li>
@@ -27,11 +26,10 @@ function YourTeam_DraftGrade () {
                     <li className="your-pick">13. Player Name</li>
                     <li className="your-pick">14. Player Name</li>
                     </ul>
-                </div>
+                
                 <div className="your-team-name">
                         <h2>San Diego Sabers</h2>
                 </div>                                                                                            
-            </div>
             <div className="your-draft-grade">
                 <h2>Curent NBA Draft Grade:</h2>
                 <p className="draft-grade">B+</p>
