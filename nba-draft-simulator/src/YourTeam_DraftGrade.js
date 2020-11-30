@@ -29,8 +29,7 @@ function YourTeam_DraftGrade () {
                     <div className="your-team-name">
                         <h2>San Diego Sabers</h2>
                     </div> 
-                
-                                                                                                          
+                                                                                                              
             <div className="your-draft-grade">
                 <h2>Curent NBA Draft Grade:</h2>
                 <p className="draft-grade">B+</p>
