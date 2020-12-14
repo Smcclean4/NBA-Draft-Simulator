@@ -26,9 +26,7 @@ function YourTeam_DraftGrade () {
                     <li className="your-pick">14. Player Name</li>
                     </ul>
 
-                    <div className="your-team-name">
-                        <h2>San Diego Sabers</h2>
-                    </div> 
+
                                                                                                               
             <div className="your-draft-grade">
                 <h2>Curent NBA Draft Grade:</h2>
@@ -36,7 +34,9 @@ function YourTeam_DraftGrade () {
                 <button><a href="#">Reset Draft Simulator</a></button>
                 <button><a href="#">Generate Current Draft Class</a></button>
             </div>
-        </div>
+
+        </div> 
+
     );
 }
 

@@ -7,6 +7,7 @@ import PickOrder from './PickOrder';
 import DraftablePlayers from './DraftablePlayers';
 import * as serviceWorker from './serviceWorker';
 import YourTeam_DraftGrade from './YourTeam_DraftGrade';
+import TeamName from './TeamName';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
     <PickOrder />
     <DraftablePlayers />
     <YourTeam_DraftGrade />
+    <TeamName />
   </React.StrictMode>,
   document.getElementById('root')
 );

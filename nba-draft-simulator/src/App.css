@@ -57,9 +57,11 @@
 
 .one-two {
   display:flex;
-  border:1px solid red;
   text-align:center;
   margin-top:100px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,255,1) 33%, rgba(0,212,255,0.21043669871794868) 71%);
+  padding:20px;
+  border-radius:5px;
 }
 
 .your-pick-ul {
@@ -75,16 +77,25 @@
   background-color:white;
 }
 
+.your-draft-grade {
+  margin-left:30%;
+}
+
 .your-team-name {
   color:white;
   text-align:center;
-  background-color:rgb(0, 0, 161);
+  background-color:#020024;
   border-radius: 0 0 25px 25px;
   padding:10px;
   align-self: flex-end;
-  width:28%;
+  width:inherit;
+  margin-bottom:10%;
 }
 
-.your-pick-ul, .your-team-name {
-  display:block;
+.one-two, .your-team-name {
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+/* your draft grade section */
+
