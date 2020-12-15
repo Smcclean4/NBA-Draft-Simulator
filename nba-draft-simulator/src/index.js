@@ -8,6 +8,7 @@ import DraftablePlayers from './DraftablePlayers';
 import * as serviceWorker from './serviceWorker';
 import YourTeam_DraftGrade from './YourTeam_DraftGrade';
 import TeamName from './TeamName';
+import Footer from './Footer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
     <DraftablePlayers />
     <YourTeam_DraftGrade />
     <TeamName />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

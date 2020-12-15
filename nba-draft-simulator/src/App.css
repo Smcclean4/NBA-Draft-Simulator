@@ -63,6 +63,7 @@
   padding:20px;
   border-radius:5px;
   width:auto;
+  box-shadow:0 0 10px 0;
 }
 
 .your-pick-ul {
@@ -92,6 +93,7 @@
   align-self: flex-end;
   width:inherit;
   margin-bottom:10%;
+  box-shadow:inherit;
 }
 
 .one-two, .your-team-name {
@@ -122,5 +124,35 @@
 .your-draft-grade a {
   text-decoration:none;
   color:white;
+  font-size:15px;
+}
+
+/* footer */
+
+.footer {
+  background-color:dodgerblue;
+  box-shadow: 0 0 10px 0;
+}
+
+.footer img {
+  width:65px;
+  height:65px;
+}
+
+.footer div {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.one {
+  background-color:white;
+} 
+
+.two {
+  width:85%;
+  text-align:right;
+}
+
+.slm {
   font-size:15px;
 }
