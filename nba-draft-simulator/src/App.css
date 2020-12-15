@@ -62,6 +62,7 @@
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,255,1) 33%, rgba(0,212,255,0.21043669871794868) 71%);
   padding:20px;
   border-radius:5px;
+  width:auto;
 }
 
 .your-pick-ul {
@@ -79,6 +80,7 @@
 
 .your-draft-grade {
   margin-left:30%;
+  margin-right:20px;
 }
 
 .your-team-name {
@@ -99,3 +101,26 @@
 
 /* your draft grade section */
 
+.your-draft-grade h2 {
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.draft-grade {
+  font-size: 100px;
+  color:red;
+  margin-bottom:50px;
+}
+
+.your-draft-grade button {
+  padding:10px;
+  border-radius:5px;
+  background-color:red;
+  margin:10px;
+}
+
+.your-draft-grade a {
+  text-decoration:none;
+  color:white;
+  font-size:15px;
+}
