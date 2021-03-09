@@ -5,7 +5,7 @@ function TeamName () {
     return (
         <div>
             <div className="your-team-name">
-                <h2>San Diego Sabers</h2>
+                <h2>San Diego Money Sabers</h2>
             </div>
         </div>
     );
