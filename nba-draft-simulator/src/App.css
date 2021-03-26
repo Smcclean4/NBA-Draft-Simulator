@@ -20,10 +20,15 @@
   text-align:center;
 }
 
+.PickList ul {
+  display:inline-flex;
+  list-style-type:none;
+}
+
 .PickList li {
-  display: inline;
-  padding:2px;
   color:whitesmoke;
+  margin-top:15px;
+  padding:0 8px 0 8px;
 }
 
 .PickOrder {

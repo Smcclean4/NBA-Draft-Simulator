@@ -11,8 +11,8 @@ class NewsBar extends React.Component {
     render() {
         const thePicks = this.state.picks
             // make a key for theList elements
-            const theList = thePicks.map((thePicks) => <li>{thePicks}</li>);
-            console.log()
+            const theList = thePicks.map((thePicks, index) => <li key={index}>{index + 1 + '. ' + thePicks}</li>);
+            console.log(theList)
         return (
             <div className="PickList">
                 <ul>{theList}</ul>
