@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function YourTeam_DraftGrade () {
+function YourTeamDraftGrade () {
 
     return (
         <div className="one-two flex-container">
@@ -40,4 +40,4 @@ function YourTeam_DraftGrade () {
     );
 }
 
-export default YourTeam_DraftGrade;
+export default YourTeamDraftGrade;

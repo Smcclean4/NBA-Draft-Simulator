@@ -5,19 +5,19 @@ class NewsBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            picks: []
+            picks: ['This', 'is', 'Just', 'a', 'Money', 'Holder']
         }
     }
     render() {
-        return(
+        const thePicks = this.state.picks
+            // make a key for theList elements
+            const theList = thePicks.map((thePicks) => <li>{thePicks}</li>);
+            console.log()
+        return (
             <div className="PickList">
-                <li>JUST</li>
-                <li>{this.state.picks}</li>
-                <li>AN</li>
-                <li>{this.state.picks}</li>
-                <li>EXAMPLE</li>
+                <ul>{theList}</ul>
             </div>
-        );
+        )
     }
 }
 
