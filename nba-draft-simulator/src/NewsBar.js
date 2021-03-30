@@ -5,7 +5,8 @@ class NewsBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            picks: ['This', 'is', 'Just', 'a', 'Money', 'Holder']
+            picks: ['This', 'is', 'Just', 'a', 'Money', 'Holder', 'and', 'this', 'will', 'show', 'the', 'draft'
+        , 'picks', 'that', 'have', 'been', 'chosen']
         }
     }
     render() {
