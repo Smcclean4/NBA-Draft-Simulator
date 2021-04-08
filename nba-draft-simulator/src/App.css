@@ -18,9 +18,45 @@
   box-shadow: 0 0 10px 0;
   height:50px;
   text-align:center;
+  width: 100%;
+  overflow:hidden;
 }
 
-.PickList ul {
+.ticker-wrap {
+  width: 100%;
+  padding-left: 100%;
+  background-color:blue;
+}
+
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+ .ticker-move {
+   display:inline-block;
+   white-space: nowrap;
+   padding-right: 100%;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-name:ticker;
+   animation-duration: 30s;
+ }
+
+ .ticker-move:hover {
+  animation-play-state: paused;
+ }
+
+ .ticker-item {
+   display:inline-block;
+   padding: 0 2rem;
+ }
+
+ @media only screen and (max-width: 768px) {
+   .ticker-move { animation-duration: 40s; }
+ }
+
+.PickList {
   display:inline-flex;
   list-style-type:none;
 }
@@ -28,7 +64,8 @@
 .PickList li {
   color:whitesmoke;
   margin-top:15px;
-  padding:0 8px 0 8px;
+  padding:0 75px 0 8px;
+  font-size:20px;
 }
 
 .PickOrder {

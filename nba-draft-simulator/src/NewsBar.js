@@ -17,7 +17,7 @@ class NewsBar extends React.Component {
             <div className="PickList">
                 <div className="ticker-wrap">
                     <div className="ticker-move">
-                        <ul>{theList}</ul>
+                        {theList}
                     </div>
                 </div>
             </div>
