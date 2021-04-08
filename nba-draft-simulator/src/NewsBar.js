@@ -11,12 +11,15 @@ class NewsBar extends React.Component {
     }
     render() {
         const thePicks = this.state.picks
-            // make a key for theList elements
-            const theList = thePicks.map((thePicks, index) => <li key={index}>{index + 1 + '. ' + thePicks}</li>);
+            const theList = thePicks.map((thePicks, index) => <li className="ticker-item" key={index}>{index + 1 + '. ' + thePicks}</li>);
             console.log(theList)
         return (
             <div className="PickList">
-                <ul>{theList}</ul>
+                <div className="ticker-wrap">
+                    <div className="ticker-move">
+                        <ul>{theList}</ul>
+                    </div>
+                </div>
             </div>
         )
     }
