@@ -24,14 +24,6 @@ function PickOrder() {
                 <p>4.</p>    
                 <img className='teamLogo' src= {teamLogo} />
            </div>
-           <div className='teamSection' key='5' value='5'>
-                <p>5.</p>  
-                <img className='teamLogo' src= {teamLogo} />
-           </div>
-           <div className='teamSection' key='6' value='6'>
-                <p>6.</p> 
-                <img className='teamLogo' src= {teamLogo} />
-           </div>
         </div>
     );
 }

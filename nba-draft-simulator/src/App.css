@@ -50,6 +50,7 @@
  .ticker-item {
    display:inline-block;
    padding: 0 2rem;
+   font-family: 'Antonio', sans-serif;
  }
 
  @media only screen and (max-width: 768px) {
@@ -63,7 +64,7 @@
 
 .PickList li {
   color:whitesmoke;
-  margin-top:15px;
+  margin-top:10px;
   padding:0 75px 0 8px;
   font-size:20px;
 }
@@ -93,6 +94,17 @@
 .playerName {
   padding:7px;
   list-style-type: none;
+}
+
+/* LOTTERY TEAMS*/
+
+.teamSection {
+  padding:15px;
+}
+
+.teamSection p {
+  font-family: 'Antonio', sans-serif;
+  font-size:30px;
 }
 
 /* YOUR TEAM */
