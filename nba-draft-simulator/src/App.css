@@ -106,6 +106,33 @@
   font-family: 'Antonio', sans-serif;
   font-size:30px;
 }
+/* DRAFTED PLAYERS*/
+
+.drafted-players {
+  margin-bottom:550px;
+  color:black;
+}
+
+.drafted-players p {
+  text-align:center;
+  margin-bottom:50px;
+  font-size:50px;
+  color:black;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.drafted-players .first-round {
+  font-size:40px;
+  margin:20px;
+  text-decoration:underline;
+}
+
+.drafted-players .second-round {
+  font-size:40px;
+  margin:20px;
+  text-decoration:underline;
+}
 
 /* YOUR TEAM */
 
