@@ -109,8 +109,14 @@
 /* DRAFTED PLAYERS*/
 
 .drafted-players {
-  margin-bottom:550px;
-  color:black;
+  margin:100px;
+  padding:50px;
+  height:1200px;
+  width:auto;
+  color:white;
+  overflow:scroll;
+  background-color:rgba(73, 73, 73, 0.299);
+  border-radius:75px 0 0 0;
 }
 
 .drafted-players p {
@@ -123,15 +129,20 @@
 }
 
 .drafted-players .first-round {
-  font-size:40px;
+  font-size:2.0em;
   margin:20px;
   text-decoration:underline;
 }
 
 .drafted-players .second-round {
-  font-size:40px;
+  font-size:2.0em;
   margin:20px;
   text-decoration:underline;
+}
+
+.playerName img {
+  height:100px;
+  width:100px;
 }
 
 /* YOUR TEAM */
@@ -145,6 +156,7 @@
   border-radius:5px;
   width:auto;
   box-shadow:0 0 10px 0;
+  height:auto;
 }
 
 .your-pick-ul {
