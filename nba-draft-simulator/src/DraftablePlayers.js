@@ -26,6 +26,9 @@ class DraftablePlayers extends React.Component {
     }
 
     render() {
+
+        const TeamLogo = <img src= "https://i.imgur.com/GdzXJPu.png"/>;
+
         return (
             <div className='drafted-players'>
                 <p>Drafted Players</p>
@@ -33,12 +36,12 @@ class DraftablePlayers extends React.Component {
                     <div>
                         <ul>
                             <p className="first-round">1st Round</p>
-                            <li className='playerName'><img src={this.state.wizards.logo}/>1. B Smith</li>
-                            <li className='playerName'><img src={this.state.bulls.logo}/>2. B Smith</li>
-                            <li className='playerName'><img src={this.state.pelicans.logo}/>3. B Smith</li>
-                            <li className='playerName'><img src={this.state.warriors.logo}/>4. B Smith</li>
-                            <li className='playerName'><img src={this.state.timberwolves.logo}/>5. B Smith</li>
-                            <li className='playerName'>6. B Smith</li>
+                            <li className='playerName'>{TeamLogo}1. B Smith</li>
+                            <li className='playerName'>{TeamLogo}2. B Smith</li>
+                            <li className='playerName'>{TeamLogo}3. B Smith</li>
+                            <li className='playerName'>{TeamLogo}4. B Smith</li>
+                            <li className='playerName'>{TeamLogo}5. B Smith</li>
+                            <li className='playerName'>{TeamLogo}6. B Smith</li>
                             <li className='playerName'>7. B Smith</li>
                             <li className='playerName'>8. B Smith</li>
                             <li className='playerName'>9. B Smith</li>
