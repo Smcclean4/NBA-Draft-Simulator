@@ -7,27 +7,11 @@ class DraftablePlayers extends React.Component {
         super(props);
 
         this.state = {
-            wizards: {
-                logo:"https://i.imgur.com/GdzXJPu.png"
-            },
-            bulls: {
-                logo:"https://i.imgur.com/GdzXJPu.png"
-            },
-            pelicans: {
-                logo:"https://i.imgur.com/GdzXJPu.png"
-            },
-            warriors: {
-                logo:"https://i.imgur.com/GdzXJPu.png"
-            },
-            timberwolves: {
-                logo:"https://i.imgur.com/GdzXJPu.png"
-            },
+           TeamLogo : <img src= "https://i.imgur.com/GdzXJPu.png"/>
         }
     }
 
     render() {
-
-        const TeamLogo = <img src= "https://i.imgur.com/GdzXJPu.png"/>;
 
         return (
             <div className='drafted-players'>
@@ -36,12 +20,12 @@ class DraftablePlayers extends React.Component {
                     <div>
                         <ul>
                             <p className="first-round">1st Round</p>
-                            <li className='playerName'>{TeamLogo}1. B Smith</li>
-                            <li className='playerName'>{TeamLogo}2. B Smith</li>
-                            <li className='playerName'>{TeamLogo}3. B Smith</li>
-                            <li className='playerName'>{TeamLogo}4. B Smith</li>
-                            <li className='playerName'>{TeamLogo}5. B Smith</li>
-                            <li className='playerName'>{TeamLogo}6. B Smith</li>
+                            <li className='playerName'>{this.state.TeamLogo}1. B Smith</li>
+                            <li className='playerName'>{this.state.TeamLogo}2. B Smith</li>
+                            <li className='playerName'>{this.state.TeamLogo}3. B Smith</li>
+                            <li className='playerName'>{this.state.TeamLogo}4. B Smith</li>
+                            <li className='playerName'>{this.state.TeamLogo}5. B Smith</li>
+                            <li className='playerName'>{this.state.TeamLogo}6. B Smith</li>
                             <li className='playerName'>7. B Smith</li>
                             <li className='playerName'>8. B Smith</li>
                             <li className='playerName'>9. B Smith</li>
