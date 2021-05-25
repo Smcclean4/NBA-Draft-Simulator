@@ -1,7 +1,20 @@
 import React from 'react';
 import './App.css';
 
-function YourTeamDraftGrade () {
+class YourTeamDraftGrade extends React.Component {
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            TeamPickNumber : '1',
+            TeamPickName : 'Josh McMichaels'
+        }
+    }
+
+render() {
+
+    const PickAmount = 'money'
 
     return (
         <div className="one-two flex-container">
@@ -36,8 +49,9 @@ function YourTeamDraftGrade () {
             </div>
 
         </div> 
-
     );
 }
+}
+
 
 export default YourTeamDraftGrade;
