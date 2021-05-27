@@ -7,8 +7,10 @@ class YourTeamDraftGrade extends React.Component {
         super(props)
 
         this.state = {
-            TeamPickNumber : '1',
+            TeamName : {
+                TeamPickNumber : '1',
             TeamPickName : 'Josh McMichaels'
+            }
         }
     }
 
