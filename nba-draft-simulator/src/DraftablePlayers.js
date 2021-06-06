@@ -27,7 +27,7 @@ class DraftablePlayers extends React.Component {
 
         const theTeam = this.state.TeamName.TeamDraftee;
 
-        const thePlayers = theTeam.map((theTeam, index) => <li className="playerName" key={index} value={index}>{index + this.setState({count: this.state.count + 1}) + '. ' + theTeam}</li>);
+        const thePlayers = theTeam.map((theTeam, index) => <li className="playerName" key={index} value={index}>{index + this.setState(count++) + '. ' + theTeam}</li>);
 
         const theTeam2 = this.state.TeamName2.TeamDraftee2;
 
