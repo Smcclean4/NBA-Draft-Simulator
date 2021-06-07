@@ -9,36 +9,26 @@ class YourTeamDraftGrade extends React.Component {
         this.state = {
             TeamName : {
                 TeamPickNumber : '1',
-            TeamPickName : 'Josh McMichaels'
+            TeamPickName : ['Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels']
             }
         }
     }
 
 render() {
 
-    const PickAmount = 'money'
+    const YourTeam = this.state.TeamName.TeamPickName;
+    const YourTeamList = YourTeam.map((YourTeam, index) => <li className="your-pick" key={index} value={index}>{index + 1 + '. ' + YourTeam}</li>);
+    const YourTeamList2 = YourTeam.map((YourTeam, index) => <li className="your-pick" key={index} value={index}>{index + YourTeam.length + 1 + '. ' + YourTeam}</li>);
 
     return (
         <div className="one-two flex-container">
                 
                     <ul className="your-pick-ul">
-                    <li className="your-pick">1. Player Name</li>
-                    <li className="your-pick">2. Player Name</li>
-                    <li className="your-pick">3. Player Name</li>
-                    <li className="your-pick">4. Player Name</li>
-                    <li className="your-pick">5. Player Name</li>
-                    <li className="your-pick">6. Player Name</li>
-                    <li className="your-pick">7. Player Name</li>
+                    {YourTeamList}
                     </ul> 
 
                     <ul className="your-pick-ul">
-                    <li className="your-pick">8. Player Name</li>
-                    <li className="your-pick">9. Player Name</li>
-                    <li className="your-pick">10. Player Name</li>
-                    <li className="your-pick">11. Player Name</li>
-                    <li className="your-pick">12. Player Name</li>
-                    <li className="your-pick">13. Player Name</li>
-                    <li className="your-pick">14. Player Name</li>
+                    {YourTeamList2}
                     </ul>
 
 
