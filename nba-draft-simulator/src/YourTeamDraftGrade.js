@@ -8,18 +8,28 @@ class YourTeamDraftGrade extends React.Component {
 
         this.state = {
             TeamName : {
-                TeamPickNumber : '1',
+                TeamPickNumber : 14,
             TeamPickName : ['Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 
-            'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels']
+            'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels']
             }
         }
     }
 
 render() {
 
+    // trying to figure out how to get 1-TeamPickNumber to display as the teams amount of picks??
+    var FindRange = (amount) => {
+        var total = 0;
+        for (var i = 0; i <= amount; i++) {
+            total += i;
+        }
+        return total;
+    }
+
+    console.log(FindRange(this.state.TeamName.TeamPickNumber))
+
     const YourTeam = this.state.TeamName.TeamPickName;
     const YourTeamList = YourTeam.map((YourTeam, index) => <li className="your-pick" key={index} value={index}>{index + 1 + '. ' + YourTeam}</li>);
-    const YourTeamList2 = YourTeam.map((YourTeam, index) => <li className="your-pick" key={index} value={index}>{index + YourTeam.length + 1 + '. ' + YourTeam}</li>);
 
     return (
         <div className="one-two flex-container">
