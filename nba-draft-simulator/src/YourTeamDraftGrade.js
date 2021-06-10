@@ -8,15 +8,31 @@ class YourTeamDraftGrade extends React.Component {
 
         this.state = {
             TeamName : { 
+            TeamPickNumber: 16,
             TeamPickName : ['Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 
             'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels']
             }
         }
+        
     }
 
 render() {
 
     // trying to figure out how to get 1-TeamPickNumber to display as the teams amount of picks??
+    var PickNumber = () => {
+        if (this.state.TeamName.TeamPickNumber = this.state.TeamName.TeamPickName.length) {
+
+        } else {
+            return this.setState({
+                TeamName: {
+                    TeamPickName : new Array (this.state.TeamName.TeamPickNumber)
+                }
+            })
+        }
+        console.log(this.state.TeamName.TeamPickName)
+    }
+
+    PickNumber()
 
     const YourTeam = this.state.TeamName.TeamPickName;
     const YourTeamList = YourTeam.map((YourTeam, index) => <li className="your-pick" key={index} value={index}>{index + 1 + '. ' + YourTeam}</li>);
