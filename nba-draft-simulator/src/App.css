@@ -109,14 +109,13 @@
 /* DRAFTED PLAYERS*/
 
 .drafted-players {
-  margin:100px;
+  margin:0 50px 250px 50px;
   padding:50px;
-  height:1200px;
+  height:1350px;
   width:auto;
   color:white;
-  overflow:scroll;
-  background-color:rgba(73, 73, 73, 0.299);
-  border-radius:75px 0 0 0;
+  background-color:rgba(0, 0, 0, 0.436);
+  border-radius:75px;
 }
 
 .drafted-players p {
