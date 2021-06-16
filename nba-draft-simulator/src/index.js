@@ -10,6 +10,8 @@ import YourTeamDraftGrade from './YourTeamDraftGrade';
 import TeamName from './TeamName';
 import Footer from './Footer';
 
+// import NBA API Here
+
 ReactDOM.render(
   <React.StrictMode>
     <Header />
