@@ -11,6 +11,14 @@ import TeamName from './TeamName';
 import Footer from './Footer';
 
 // import NBA API Here
+class API extends React.Component {
+  constructor(props) {
+    super(props) 
+    this.state = {
+      loading: true
+    } 
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>
