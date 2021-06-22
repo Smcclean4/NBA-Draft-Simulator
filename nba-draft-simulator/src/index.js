@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './Header';
@@ -9,16 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import YourTeamDraftGrade from './YourTeamDraftGrade';
 import TeamName from './TeamName';
 import Footer from './Footer';
-
-// import NBA API Here
-class API extends React.Component {
-  constructor(props) {
-    super(props) 
-    this.state = {
-      loading: true
-    } 
-  }
-}
+import API from './API';
 
 ReactDOM.render(
   <React.StrictMode>
