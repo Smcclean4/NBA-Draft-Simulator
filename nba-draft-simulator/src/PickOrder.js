@@ -30,19 +30,19 @@ class PickOrder extends React.Component {
                <div className="PickOrder flex-container">
                     <div className='teamSection' key='1' value='1'>
                          <p>1. {this.state.teamOne.name}</p>
-                         <img className='teamLogo' src= {this.state.teamOne.logo} />
+                         <img alt="" className='teamLogo' src= {this.state.teamOne.logo} />
                     </div>
                     <div className='teamSection' key='2' value='2'>
                          <p>2. {this.state.teamTwo.name}</p> 
-                         <img className='teamLogo' src= {this.state.teamTwo.logo} />
+                         <img alt="" className='teamLogo' src= {this.state.teamTwo.logo} />
                     </div>
                     <div className='teamSection' key='3' value='3'>
                          <p>3. {this.state.teamThree.name}</p>  
-                         <img className='teamLogo' src= {this.state.teamThree.logo} />
+                         <img alt="" className='teamLogo' src= {this.state.teamThree.logo} />
                     </div>
                     <div className='teamSection' key='4' value='4'>
                          <p>4.{this.state.teamFour.name}</p>    
-                         <img className='teamLogo' src= {this.state.teamFour.logo} />
+                         <img alt="" className='teamLogo' src= {this.state.teamFour.logo} />
                     </div>
                </div>
           )

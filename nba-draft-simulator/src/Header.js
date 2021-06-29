@@ -4,7 +4,7 @@ import './App.css';
 function Header() {
   return (
     <div className="Header">
-      <img className="Img" src="https://i.imgur.com/RcpxJbg.png" />
+      <img className="Img" alt ="" src="https://i.imgur.com/RcpxJbg.png" />
     </div>
   );
 }

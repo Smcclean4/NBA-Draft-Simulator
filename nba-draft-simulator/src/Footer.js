@@ -6,7 +6,7 @@ function Footer () {
         <div>
             <div className="footer">
                 <div className="one">
-                <img src="https://i.imgur.com/DJBfTAR.png"></img>
+                <img alt="" src="https://i.imgur.com/DJBfTAR.png"></img>
                 </div>
                 <div className="two">
                 <p className="slm">© S.L.M.</p>
