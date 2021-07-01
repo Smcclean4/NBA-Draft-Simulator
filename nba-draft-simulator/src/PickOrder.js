@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import {TeamName, TeamLogo} from './API'
 
 
 
@@ -10,20 +9,20 @@ class PickOrder extends React.Component {
           super(props);
           this.state = {
                teamOne: {
-                    name: [<TeamName team=""/>],
-                    logo: [<TeamLogo logo=""/>]
+                    name: [],
+                    logo: []
                },
                teamTwo: {
-                    name: [<TeamName team=""/>],
-                    logo: [<TeamLogo logo=""/>]
+                    name: [],
+                    logo: []
                },
                teamThree: {
-                    name: [<TeamName team=""/>],
-                    logo: [<TeamLogo logo=""/>]
+                    name: [],
+                    logo: []
                },
                teamFour: {
-                    name: [<TeamName team=""/>],
-                    logo: [<TeamLogo logo=""/>]
+                    name: [],
+                    logo: []
                }
           }
      }
