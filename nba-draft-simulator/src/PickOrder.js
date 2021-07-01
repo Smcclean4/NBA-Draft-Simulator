@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 
-
-
 class PickOrder extends React.Component {
 
      constructor(props) {
