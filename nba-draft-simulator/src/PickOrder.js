@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import {TeamName, TeamLogo} from './API'
+
+
 
 class PickOrder extends React.Component {
 
@@ -7,20 +10,20 @@ class PickOrder extends React.Component {
           super(props);
           this.state = {
                teamOne: {
-                    name: 'Wizards',
-                    logo: 'https://i.imgur.com/GdzXJPu.png'
+                    name: [<TeamName team=""/>],
+                    logo: [<TeamLogo logo=""/>]
                },
                teamTwo: {
-                    name: 'Magic',
-                    logo: 'https://i.imgur.com/GdzXJPu.png'
+                    name: [<TeamName team=""/>],
+                    logo: [<TeamLogo logo=""/>]
                },
                teamThree: {
-                    name: 'Rockets',
-                    logo: 'https://i.imgur.com/GdzXJPu.png'
+                    name: [<TeamName team=""/>],
+                    logo: [<TeamLogo logo=""/>]
                },
                teamFour: {
-                    name: 'Timberwolves',
-                    logo: 'https://i.imgur.com/GdzXJPu.png'
+                    name: [<TeamName team=""/>],
+                    logo: [<TeamLogo logo=""/>]
                }
           }
      }
@@ -29,20 +32,20 @@ class PickOrder extends React.Component {
           return (
                <div className="PickOrder flex-container">
                     <div className='teamSection' key='1' value='1'>
-                         <p>1. {this.state.teamOne.name}</p>
-                         <img alt="" className='teamLogo' src= {this.state.teamOne.logo} />
+                         <p>1.</p>{this.state.teamOne.name}
+                         {this.state.teamOne.logo}
                     </div>
                     <div className='teamSection' key='2' value='2'>
-                         <p>2. {this.state.teamTwo.name}</p> 
-                         <img alt="" className='teamLogo' src= {this.state.teamTwo.logo} />
+                         <p>1.</p>{this.state.teamTwo.name}
+                         {this.state.teamTwo.logo}
                     </div>
                     <div className='teamSection' key='3' value='3'>
-                         <p>3. {this.state.teamThree.name}</p>  
-                         <img alt="" className='teamLogo' src= {this.state.teamThree.logo} />
+                         <p>2.</p>{this.state.teamThree.name}
+                         {this.state.teamThree.logo}
                     </div>
                     <div className='teamSection' key='4' value='4'>
-                         <p>4.{this.state.teamFour.name}</p>    
-                         <img alt="" className='teamLogo' src= {this.state.teamFour.logo} />
+                         <p>3.</p>{this.state.teamFour.name}   
+                         {this.state.teamFour.logo}
                     </div>
                </div>
           )

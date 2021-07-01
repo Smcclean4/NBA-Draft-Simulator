@@ -10,12 +10,10 @@ class DraftablePlayers extends React.Component {
         count: 0,
 
         TeamName: {
-                TeamDraftee : ["Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney","Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney","Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney","Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney"
-            ,"Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney","Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney", "Alucard Von Mooney" ]
+                TeamDraftee : []
             },
         TeamName2: {
-                TeamDraftee2 : ["Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez"
-            , "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez", "Blake Martinez"] 
+                TeamDraftee2 : []
         }
         }
     }

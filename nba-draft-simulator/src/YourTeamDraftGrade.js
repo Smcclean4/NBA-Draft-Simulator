@@ -9,8 +9,7 @@ class YourTeamDraftGrade extends React.Component {
         this.state = {
             TeamName : { 
             TeamPickNumber: 16,
-            TeamPickName : ['Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 
-            'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels', 'Josh McMichaels']
+            TeamPickName : []
             }
         }
         

@@ -9,7 +9,6 @@ import * as serviceWorker from './serviceWorker';
 import YourTeamDraftGrade from './YourTeamDraftGrade';
 import TeamName from './TeamName';
 import Footer from './Footer';
-import API from './API';
 
 ReactDOM.render(
   <React.StrictMode>
