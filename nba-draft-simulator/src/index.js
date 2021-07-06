@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import YourTeamDraftGrade from './YourTeamDraftGrade';
 import TeamName from './TeamName';
 import Footer from './Footer';
-import getData from './API';
+import getData from './API'
 
 ReactDOM.render(
   <React.StrictMode>
