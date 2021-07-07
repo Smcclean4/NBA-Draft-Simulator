@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import GetData from './API';
 
 class PickOrder extends React.Component {
 
@@ -9,25 +8,40 @@ class PickOrder extends React.Component {
 
           this.state = {
                teamOne: {
-                    name: [<GetData />],
-                    logo: []
+                    name: "",
+                    logo: <img alt="" src=""/>
                },
                teamTwo: {
-                    name: [],
-                    logo: []
+                    name: "",
+                    logo: <img alt="" src=""/>
                },
                teamThree: {
-                    name: [],
-                    logo: []
+                    name: "",
+                    logo: <img alt="" src=""/>
                },
                teamFour: {
-                    name: [],
-                    logo: []
+                    name: "",
+                    logo: <img alt="" src=""/>
                }
           }
      }
 
      render() {
+          const axios = require('axios')
+
+          async function setTeam() {
+               try {
+                    var response = axios.get('https://www.balldontlie.io/api/v1/teams')
+                    var randomNumber = Math.floor(Math.random() * 5)
+                    var randomTeam = response
+                    console.log(randomTeam)
+               } catch(error) {
+                    console.log(error)
+               }
+          }
+
+          setTeam()
+
           return (
                <div className="PickOrder flex-container">
                     <div className='teamSection' key='1' value='1'>
