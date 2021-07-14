@@ -29,18 +29,21 @@ class PickOrder extends React.Component {
      render() {
           const axios = require('axios')
 
-          async function setTeam() {
+          async function setTeam(url) {
                try {
-                    var response = axios.get('https://www.balldontlie.io/api/v1/teams')
-                    var randomNumber = Math.floor(Math.random() * 5)
-                    var randomTeam = response
+                    var response = await axios.get(url)
+                    var randomNumber = Math.floor(Math.random() * 30)
+                    if (randomNumber === randomNumber) {
+                         Math.floor(Math.random() * 30)
+                    }
+                    var randomTeam = response.data.data[`${randomNumber}`].city
                     console.log(randomTeam)
                } catch(error) {
                     console.log(error)
                }
           }
 
-          setTeam()
+          setTeam('https://www.balldontlie.io/api/v1/teams')
 
           return (
                <div className="PickOrder flex-container">
