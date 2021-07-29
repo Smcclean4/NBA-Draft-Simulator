@@ -11,8 +11,9 @@ const PickOrder = () => {
           async function fetchData(url) {
           const response = await fetch(url);
           const teams = await response.json();
+          console.log(teams)
           const rando = Math.floor(Math.random() * 29);
-          setData(teams.data[`${rando}`].city);
+          setData(teams.data[`${rando}`].name);
           }
           fetchData('https://www.balldontlie.io/api/v1/teams');
      },[]);
@@ -22,7 +23,7 @@ const PickOrder = () => {
           const response = await fetch(url);
           const teams = await response.json();
           const rando = Math.floor(Math.random() * 29);
-          setData2(teams.data[`${rando}`].city);
+          setData2(teams.data[`${rando}`].name);
           }
           fetchData('https://www.balldontlie.io/api/v1/teams');
      },[]);
@@ -32,7 +33,7 @@ const PickOrder = () => {
           const response = await fetch(url);
           const teams = await response.json();
           const rando = Math.floor(Math.random() * 29);
-          setData3(teams.data[`${rando}`].city);
+          setData3(teams.data[`${rando}`].name);
           }
           fetchData('https://www.balldontlie.io/api/v1/teams');
      },[]);
@@ -42,7 +43,7 @@ const PickOrder = () => {
           const response = await fetch(url);
           const teams = await response.json();
           const rando = Math.floor(Math.random() * 29);
-          setData4(teams.data[`${rando}`].city);
+          setData4(teams.data[`${rando}`].name);
           }
           fetchData('https://www.balldontlie.io/api/v1/teams');
      },[]);
