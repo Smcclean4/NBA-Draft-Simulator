@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CheckTeam from './CheckTeam'
+// import CheckTeam from './CheckTeam'
 import './App.css';
 
 const PickOrder = () => {
