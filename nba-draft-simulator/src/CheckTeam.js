@@ -1,70 +1,70 @@
 import React from 'react'
 import * as NBAIcons from 'react-nba-logos'
 
-const CheckTeam = (t, r) => {
-    if (t.data[`${r}`].abbreviation === 'TOR') {
+const CheckTeam = (abbreviation) => {
+    if (abbreviation === 'TOR') {
          return <NBAIcons.TOR />
-    } else if (t.data[`${r}`].abbreviation === 'LAL') {
+    } else if (abbreviation === 'LAL') {
         return <NBAIcons.LAL />
-    } else if (t.data[`${r}`].abbreviation === 'ATL') {
+    } else if (abbreviation === 'ATL') {
         return <NBAIcons.ATL />
-    } else if (t.data[`${r}`].abbreviation === 'BOS') {
+    } else if (abbreviation === 'BOS') {
         return <NBAIcons.BOS />
-    } else if (t.data[`${r}`].abbreviation === 'BKN') {
+    } else if (abbreviation === 'BKN') {
         return <NBAIcons.BKN />
-    } else if (t.data[`${r}`].abbreviation === 'CHA') {
+    } else if (abbreviation === 'CHA') {
         return <NBAIcons.CHA />
-    } else if (t.data[`${r}`].abbreviation === 'CHI') {
+    } else if (abbreviation === 'CHI') {
         return <NBAIcons.CHI />
-    } else if (t.data[`${r}`].abbreviation === 'CLE') {
+    } else if (abbreviation === 'CLE') {
         return <NBAIcons.CLE />
-    } else if (t.data[`${r}`].abbreviation === 'DAL') {
+    } else if (abbreviation === 'DAL') {
         return <NBAIcons.DAL />
-    } else if (t.data[`${r}`].abbreviation === 'DEN') {
+    } else if (abbreviation === 'DEN') {
         return <NBAIcons.DEN />
-    } else if (t.data[`${r}`].abbreviation === 'DET') {
+    } else if (abbreviation === 'DET') {
         return <NBAIcons.DET />
-    } else if (t.data[`${r}`].abbreviation === 'GSW') {
+    } else if (abbreviation === 'GSW') {
         return <NBAIcons.GSW />
-    } else if (t.data[`${r}`].abbreviation === 'HOU') {
+    } else if (abbreviation === 'HOU') {
         return <NBAIcons.HOU />
-    } else if (t.data[`${r}`].abbreviation === 'IND') {
+    } else if (abbreviation === 'IND') {
         return <NBAIcons.IND />
-    } else if (t.data[`${r}`].abbreviation === 'LAC') {
+    } else if (abbreviation === 'LAC') {
         return <NBAIcons.LAC />
-    } else if (t.data[`${r}`].abbreviation === 'LAL') {
+    } else if (abbreviation === 'LAL') {
         return <NBAIcons.LAL />
-    } else if (t.data[`${r}`].abbreviation === 'MEM') {
+    } else if (abbreviation === 'MEM') {
         return <NBAIcons.MEM />
-    } else if (t.data[`${r}`].abbreviation === 'MIA') {
+    } else if (abbreviation === 'MIA') {
         return <NBAIcons.MIA />
-    } else if (t.data[`${r}`].abbreviation === 'MIL') {
+    } else if (abbreviation === 'MIL') {
         return <NBAIcons.MIL />
-    } else if (t.data[`${r}`].abbreviation === 'MIN') {
+    } else if (abbreviation === 'MIN') {
         return <NBAIcons.MIN />
-    } else if (t.data[`${r}`].abbreviation === 'NOP') {
+    } else if (abbreviation === 'NOP') {
         return <NBAIcons.NOP />
-    } else if (t.data[`${r}`].abbreviation === 'NYK') {
+    } else if (abbreviation === 'NYK') {
         return <NBAIcons.NYK />
-    } else if (t.data[`${r}`].abbreviation === 'OKC') {
+    } else if (abbreviation === 'OKC') {
         return <NBAIcons.OKC />
-    } else if (t.data[`${r}`].abbreviation === 'ORL') {
+    } else if (abbreviation === 'ORL') {
         return <NBAIcons.ORL />
-    } else if (t.data[`${r}`].abbreviation === 'PHI') {
+    } else if (abbreviation === 'PHI') {
         return <NBAIcons.PHI />
-    } else if (t.data[`${r}`].abbreviation === 'PHX') {
+    } else if (abbreviation === 'PHX') {
         return <NBAIcons.PHX />
-    } else if (t.data[`${r}`].abbreviation === 'POR') {
+    } else if (abbreviation === 'POR') {
         return <NBAIcons.POR />
-    } else if (t.data[`${r}`].abbreviation === 'SAC') {
+    } else if (abbreviation === 'SAC') {
         return <NBAIcons.SAC />
-    } else if (t.data[`${r}`].abbreviation === 'SAS') {
+    } else if (abbreviation === 'SAS') {
         return <NBAIcons.SAS />
-    } else if (t.data[`${r}`].abbreviation === 'TOR') {
+    } else if (abbreviation === 'TOR') {
         return <NBAIcons.TOR />
-    } else if (t.data[`${r}`].abbreviation === 'UTA') {
+    } else if (abbreviation === 'UTA') {
         return <NBAIcons.UTA />
-    } else if (t.data[`${r}`].abbreviation === 'WAS') {
+    } else if (abbreviation === 'WAS') {
         return <NBAIcons.WAS />
     }
 }
