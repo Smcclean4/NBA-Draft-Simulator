@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import CheckTeam from './CheckTeam'
+import CheckTeam from './CheckTeam'
 import './App.css';
 
 const PickOrder = () => {
@@ -15,6 +15,7 @@ const PickOrder = () => {
           console.log(teams)
           const rando = Math.floor(Math.random() * 29);
           setData(teams.data[`${rando}`].name);
+          CheckTeam(teams, rando)
           }
           fetchData('https://www.balldontlie.io/api/v1/teams');
      },[]);
