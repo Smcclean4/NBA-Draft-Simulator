@@ -18,6 +18,15 @@ class DraftablePlayers extends React.Component {
         }
     }
 
+    componentDidMount() {
+        async function fetchPlayerName(url) {
+        const response = await fetch(url)
+        const players = await response.json()
+        console.log(players)
+        }
+        fetchPlayerName(`http://data.nba.net/10s/prod/v1/2016/players.json`)
+    }
+
     // create algorith for name and logo insertion 
     // create algorithm to handle logos being displayed and also players names being picked
 
