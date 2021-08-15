@@ -9,22 +9,20 @@ class DraftablePlayers extends React.Component {
         this.state = {
         count: 0,
 
-        TeamName: {
-                TeamDraftee : []
-            },
-        TeamName2: {
-                TeamDraftee2 : []
-        }
+        TeamDraftee: [],
+
+        TeamDraftee2: []
         }
     }
 
     componentDidMount() {
         async function fetchPlayerName(url) {
         const response = await fetch(url)
-        const players = await response.json()
-        console.log(players)
+        const items = await response.json()
+        console.log(items)
+        // get player data and loop throught it and place data inside of the draft board
         }
-        fetchPlayerName(`http://data.nba.net/10s/prod/v1/2016/players.json`)
+        fetchPlayerName(`http://api.probasketballapi.com/player`)
     }
 
     // create algorith for name and logo insertion 
@@ -32,11 +30,11 @@ class DraftablePlayers extends React.Component {
 
     render() {
 
-        const theTeam = this.state.TeamName.TeamDraftee;
+        const theTeam = this.state.TeamDraftee;
 
         const thePlayers = theTeam.map((theTeam, index) => <li className="playerName" key={index} value={index}>{index + 1 + '. ' + theTeam}</li>);
 
-        const theTeam2 = this.state.TeamName2.TeamDraftee2;
+        const theTeam2 = this.state.TeamDraftee2;
 
         const thePlayersRd2 = theTeam2.map((theTeam2, index) => <li className="playerName" key={index} value={index}>{index + theTeam.length + 1 + '. ' + theTeam2}</li>);
 
