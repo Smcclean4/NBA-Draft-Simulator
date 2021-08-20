@@ -22,7 +22,7 @@ class DraftablePlayers extends React.Component {
         console.log(items)
         // get player data and loop throught it and place data inside of the draft board
         }
-        fetchPlayerName(`http://api.probasketballapi.com/player`)
+        fetchPlayerName(`https://www.balldontlie.io/api/v1/players/next_page?=2`)
     }
 
     // create algorith for name and logo insertion 
