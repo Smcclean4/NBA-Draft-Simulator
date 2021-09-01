@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
+import DraftablePlayers from './DraftablePlayers.js'
 
 class NewsBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            picks: ['GET', 'GET','GET','GET','GET','GET','GET','GET']
+            picks: []
+            // figure out how to put picks into the news bar using props?
         }
     }
     render() {
         const thePicks = this.state.picks
-            const theList = thePicks.map((thePicks, index) => <li className="ticker-item" key={index}>{index + 1 + '. ' + thePicks}</li>);
+        const theList = thePicks.map((thePicks, index) => <li className="ticker-item" key={index}>{index + 1 + '. ' + thePicks}</li>);
         return (
             <div className="PickList">
                 <div className="ticker-wrap">
