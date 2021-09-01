@@ -3,7 +3,7 @@ import './App.css';
 
 class DraftablePlayers extends React.Component {
 
-    // const Players = "Cade Cunningham, Jalen Green, Evan Mobley, Scottie Barnes, Jalen Suggs, Josh Giddey, Jonathan Kuminga, Franz Wagner, Davion Mitchell, Ziaire Williams, James Bouknight, Joshua Primo, Chris Duarte, Moses Moody, Corey Kispert, Alperen Sengun, Trey Murphy, Tre Mann, Kai Jones, Jalen Johnson, Keon Johnson, Isaiah Jackson, Usman Garuba, Josh Christopher, Quentin Grimes, Nah’Shon Hyland, Cameron Thomas, Jaden Springer, Day’Ron Sharpe, Santi Aldama, Isaiah Todd, Jeremiah Robinson-Earl, Jason Preston, Rokas Jokubaitis, Herbert Jones, Miles McBride, JT Thor, Ayo Dosunmu, Neemias Queta, Jared Butler, Joe Wieskamp, Isaiah Livers, Greg Brown, Kessler Edwards, Juhann Begarin, Dalano Banton, David Johnson, Sharife Cooper, Marcus Zegarowski, Filip Petrusev, BJ Boston, Luka Garza, Charles Bassey, Sandro Mamukelashvili, Aaron Wiggins, Scottie Lewis, Balsa Koprivica, Jericho Sims, RaiQuan Gray, Georgios Kalaitzakis"
+    // const Players = "Cade Cunningham", "Jalen Green", "Evan Mobley", "Scottie Barnes", "Jalen Suggs", "Josh Giddey", "Jonathan Kuminga", "Franz Wagner", "Davion Mitchell", "Ziaire Williams", "James Bouknight", "Joshua Primo", "Chris Duarte", "Moses Moody", "Corey Kispert", "Alperen Sengun", "Trey Murphy", "Tre Mann", "Kai Jones", "Jalen Johnson", "Keon Johnson", "Isaiah Jackson", "Usman Garuba", "Josh Christopher", "Quentin Grimes", "Nah’Shon Hyland", "Cameron Thomas", "Jaden Springer", "Day’Ron Sharpe", "Santi Aldama", "Isaiah Todd", "Jeremiah Robinson-Earl", "Jason Preston", "Rokas Jokubaitis", "Herbert Jones", "Miles McBride", "JT Thor", "Ayo Dosunmu", "Neemias Queta", "Jared Butler", "Joe Wieskamp", "Isaiah Livers", "Greg Brown", "Kessler Edwards", "Juhann Begarin", "Dalano Banton", "David Johnson", "Sharife Cooper", "Marcus Zegarowski", "Filip Petrusev", "BJ Boston", "Luka Garza", "Charles Bassey", "Sandro Mamukelashvili", "Aaron Wiggins", "Scottie Lewis", "Balsa Koprivica", "Jericho Sims", "RaiQuan Gray", "Georgios Kalaitzakis"
 
     // const first = ["Cade", "Jalen", "Evan", "Scottie", "Jalen", "Josh", "Jonathan", "Franz", "Davion", "Ziaire", "James", "Joshua", "Chris", "Moses", "Cory", "Alperen", "Trey", "Tre", "Kai", "Jalen", "Keon", "Isaiah", "Usman", "Josh", "Quentin", "Nah'shon", "Cameron", "Jaden", "Day'Ron", "Santi", "Isaiah", "Jeremiah", "Jason", "Joe", "Isaiah", "Greg", "Kessler", "Juhann", "Dalano", "David", "Sharife", "Marcus", "Filip", "BJ", "Luka", "Charles", "Sandro", "Aaron", "Scottie", "Balsa", "Jericho", "RaiQuan", "Georgios"]
 
@@ -15,10 +15,11 @@ class DraftablePlayers extends React.Component {
         this.state = {
         count: 0,
 
-        TeamDraftee: [],
+        TeamDraftee: ["Cade Cunningham", "Jalen Green", "Evan Mobley", "Scottie Barnes", "Jalen Suggs", "Josh Giddey", "Jonathan Kuminga", "Franz Wagner", "Davion Mitchell", "Ziaire Williams", "James Bouknight", "Joshua Primo", "Chris Duarte", "Moses Moody", "Corey Kispert", "Alperen Sengun", "Trey Murphy", "Tre Mann", "Kai Jones", "Jalen Johnson", "Keon Johnson", "Isaiah Jackson", "Usman Garuba", "Josh Christopher", "Quentin Grimes", "Nah’Shon Hyland", "Cameron Thomas", "Jaden Springer", "Day’Ron Sharpe", "Santi Aldama"],
 
-        TeamDraftee2: []
+        TeamDraftee2: ["Isaiah Todd", "Jeremiah Robinson-Earl", "Jason Preston", "Rokas Jokubaitis", "Herbert Jones", "Miles McBride", "JT Thor", "Ayo Dosunmu", "Neemias Queta", "Jared Butler", "Joe Wieskamp", "Isaiah Livers", "Greg Brown", "Kessler Edwards", "Juhann Begarin", "Dalano Banton", "David Johnson", "Sharife Cooper", "Marcus Zegarowski", "Filip Petrusev", "BJ Boston", "Luka Garza", "Charles Bassey", "Sandro Mamukelashvili", "Aaron Wiggins", "Scottie Lewis", "Balsa Koprivica", "Jericho Sims", "RaiQuan Gray", "Georgios Kalaitzakis"]
         }
+        
     }
 
     componentDidMount() {
