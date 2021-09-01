@@ -3,6 +3,12 @@ import './App.css';
 
 class DraftablePlayers extends React.Component {
 
+    // const Players = "Cade Cunningham, Jalen Green, Evan Mobley, Scottie Barnes, Jalen Suggs, Josh Giddey, Jonathan Kuminga, Franz Wagner, Davion Mitchell, Ziaire Williams, James Bouknight, Joshua Primo, Chris Duarte, Moses Moody, Corey Kispert, Alperen Sengun, Trey Murphy, Tre Mann, Kai Jones, Jalen Johnson, Keon Johnson, Isaiah Jackson, Usman Garuba, Josh Christopher, Quentin Grimes, Nah’Shon Hyland, Cameron Thomas, Jaden Springer, Day’Ron Sharpe, Santi Aldama, Isaiah Todd, Jeremiah Robinson-Earl, Jason Preston, Rokas Jokubaitis, Herbert Jones, Miles McBride, JT Thor, Ayo Dosunmu, Neemias Queta, Jared Butler, Joe Wieskamp, Isaiah Livers, Greg Brown, Kessler Edwards, Juhann Begarin, Dalano Banton, David Johnson, Sharife Cooper, Marcus Zegarowski, Filip Petrusev, BJ Boston, Luka Garza, Charles Bassey, Sandro Mamukelashvili, Aaron Wiggins, Scottie Lewis, Balsa Koprivica, Jericho Sims, RaiQuan Gray, Georgios Kalaitzakis"
+
+    // const first = ["Cade", "Jalen", "Evan", "Scottie", "Jalen", "Josh", "Jonathan", "Franz", "Davion", "Ziaire", "James", "Joshua", "Chris", "Moses", "Cory", "Alperen", "Trey", "Tre", "Kai", "Jalen", "Keon", "Isaiah", "Usman", "Josh", "Quentin", "Nah'shon", "Cameron", "Jaden", "Day'Ron", "Santi", "Isaiah", "Jeremiah", "Jason", "Joe", "Isaiah", "Greg", "Kessler", "Juhann", "Dalano", "David", "Sharife", "Marcus", "Filip", "BJ", "Luka", "Charles", "Sandro", "Aaron", "Scottie", "Balsa", "Jericho", "RaiQuan", "Georgios"]
+
+    // const last = ["Cunningham", "Green", "Mobley", "Barnes", "Suggs", "Giddey", "Kuminga", "Wagner", "Mitchell", "Williams", "Bouknight", "Primo", "Duarte", "Moody", "Kispert", "Sengun", "Murphy", "Mann", "Jones", "Johnson", "Johnson", "Jackson", "Garuba", "Christopher", "Grimes", "Hyland", "Thomas", "Springer", "Sharpe", "Aldama", "Todd", "Robinson-Earl", "Preston", "Jokubaitis", "Jones", "Mcbride", "Thor", "Dosunmu", "Queta", "Butler", "Wieskamp", "Livers", "Brown", "Edwards", "Begarin", "Banton", "Johnson", "Cooper", "Zegarowski", "Petrusev", "Boston", "Garza", "Bassey", "Mamukelashvili", "Wiggins", "Lewis", "Koprivica", "Sims", "Gray", "Kalaitzakis"]
+
     constructor(props) {
         super(props);
 
@@ -23,25 +29,8 @@ class DraftablePlayers extends React.Component {
         }
         fetchPlayerName(`https://www.balldontlie.io/api/v1/players/?search=lamelo_ball`)
     }
-
-    // create algorith for name and logo insertion 
-    // create algorithm to handle logos being displayed and also players names being picked
-
+    
     render() {
-
-
-    const Players = "Cade Cunningham, Jalen Green, Evan Mobley, Scottie Barnes, Jalen Suggs, Josh Giddey, Jonathan Kuminga, Franz Wagner, Davion Mitchell, Ziaire Williams, James Bouknight, Joshua Primo, Chris Duarte, Moses Moody, Corey Kispert, Alperen Sengun, Trey Murphy, Tre Mann, Kai Jones, Jalen Johnson, Keon Johnson, Isaiah Jackson, Usman Garuba, Josh Christopher, Quentin Grimes, Nah’Shon Hyland, Cameron Thomas, Jaden Springer, Day’Ron Sharpe, Santi Aldama, Isaiah Todd, Jeremiah Robinson-Earl, Jason Preston, Rokas Jokubaitis, Herbert Jones, Miles McBride, JT Thor, Ayo Dosunmu, Neemias Queta, Jared Butler, Joe Wieskamp, Isaiah Livers, Greg Brown, Kessler Edwards, Juhann Begarin, Dalano Banton, David Johnson, Sharife Cooper, Marcus Zegarowski, Filip Petrusev, BJ Boston, Luka Garza, Charles Bassey, Sandro Mamukelashvili, Aaron Wiggins, Scottie Lewis, Balsa Koprivica, Jericho Sims, RaiQuan Gray, Georgios Kalaitzakis"
-
-    const first = ["Cade", "Jalen", "Evan", "Scottie", "Jalen", "Josh", "Jonathan", "Franz", "Davion", "Ziaire", "James", "Joshua", "Chris", "Moses", "Cory", "Alperen", "Trey", "Tre", "Kai", "Jalen", "Keon", "Isaiah", "Usman", "Josh", "Quentin", "Nah'shon", "Cameron", "Jaden", "Day'Ron", "Santi", "Isaiah", "Jeremiah", "Jason", "Joe", "Isaiah", "Greg", "Kessler", "Juhann", "Dalano", "David", "Sharife", "Marcus", "Filip", "BJ", "Luka", "Charles", "Sandro", "Aaron", "Scottie", "Balsa", "Jericho", "RaiQuan", "Georgios"]
-
-    const last = ["Cunningham", "Green", "Mobley", "Barnes", "Suggs", "Giddey", "Kuminga", "Wagner", "Mitchell", "Williams", "Bouknight", "Primo", "Duarte", "Moody", "Kispert", "Sengun", "Murphy", "Mann", "Jones", "Johnson", "Johnson", "Jackson", "Garuba", "Christopher", "Grimes", "Hyland", "Thomas", "Springer", "Sharpe", "Aldama", "Todd", "Robinson-Earl", "Preston", "Jokubaitis", "Jones", "Mcbride", "Thor", "Dosunmu", "Queta", "Butler", "Wieskamp", "Livers", "Brown", "Edwards", "Begarin", "Banton", "Johnson", "Cooper", "Zegarowski", "Petrusev", "Boston", "Garza", "Bassey", "Mamukelashvili", "Wiggins", "Lewis", "Koprivica", "Sims", "Gray", "Kalaitzakis"]
-
-        for (let i = 0; i < first.length; i++) {
-            this.setState({
-                TeamDraftee: [first[i] + last[i]],
-                TeamDraftee2: [first[i] + last[i]]
-            })
-        }
 
         const theTeam = this.state.TeamDraftee;
 
