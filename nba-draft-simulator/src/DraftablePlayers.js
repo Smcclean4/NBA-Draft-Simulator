@@ -21,25 +21,16 @@ class DraftablePlayers extends React.Component {
         }
 
     }
-
-    componentDidMount() {
-        async function fetchPlayerName(url) {
-        const response = await fetch(url)
-        const rookies = await response.json()
-        console.log(rookies)
-        }
-        fetchPlayerName(`https://www.balldontlie.io/api/v1/players/?search=lamelo_ball`)
-    }
     
     render() {
 
         const theTeam = this.state.TeamDraftee;
 
-        const thePlayers = theTeam.map((theTeam, index) => <li className="playerName" key={index} value={index}>{index + 1 + '. ' + theTeam}</li>);
+        const thePlayers = theTeam.map((theName, index) => <li className="playerName" key={index} value={index}>{index + 1 + '. ' + theName}</li>);
 
         const theTeam2 = this.state.TeamDraftee2;
 
-        const thePlayersRd2 = theTeam2.map((theTeam2, index) => <li className="playerName" key={index} value={index}>{index + theTeam.length + 1 + '. ' + theTeam2}</li>);
+        const thePlayersRd2 = theTeam2.map((theName2, index) => <li className="playerName" key={index} value={index}>{index + theTeam.length + 1 + '. ' + theName2}</li>);
 
         return (
             <div className='drafted-players'>
