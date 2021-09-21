@@ -18,7 +18,6 @@ const PickOrder = () => {
           async function fetchData(url) {
           const response = await fetch(url);
           const teams = await response.json();
-          console.log(teams)
           const rando = Math.floor(Math.random() * 29);
           setData(teams.data[`${rando}`].name);
           setLogo(teams.data[`${rando}`].abbreviation);

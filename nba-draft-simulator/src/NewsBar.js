@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import DraftablePlayers from './DraftablePlayers.js'
 
 class NewsBar extends React.Component {
     constructor(props) {
