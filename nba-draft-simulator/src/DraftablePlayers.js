@@ -26,7 +26,16 @@ class DraftablePlayers extends React.Component {
 
         const theTeam = this.state.TeamDraftee;
 
-        const thePlayers = theTeam.map((theName, index) => <li className="playerName" key={index} value={index}>{index + 1 + '. ' + theName}</li>)
+        for (var i = 0; i <= theTeam.length; i++) {
+            thePlayers(i, theTeam[i]);
+        }
+
+        function thePlayers(index, theName) {
+            setTimeout(function() {
+                console.log(theName)
+                return <li className="playerName" key={index} value={index}>{index + 1 + '. ' + theName}</li>
+            }, 1000)
+        }
 
         console.log(thePlayers)
 
@@ -41,7 +50,7 @@ class DraftablePlayers extends React.Component {
                     <div>
                         <ul>
                             <p className="first-round">1st Round</p>
-                            {thePlayers}
+                            {thePlayers(i, theTeam[i])}
                         </ul>
                     </div>
                     <div>
