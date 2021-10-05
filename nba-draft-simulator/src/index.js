@@ -11,7 +11,7 @@ import TeamName from './TeamName';
 import Footer from './Footer';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <Header />
     <NewsBar />
     <PickOrder />
@@ -19,7 +19,7 @@ ReactDOM.render(
     <YourTeamDraftGrade />
     <TeamName />
     <Footer />
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );
 
