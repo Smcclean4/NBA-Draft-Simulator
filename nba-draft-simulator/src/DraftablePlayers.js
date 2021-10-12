@@ -26,14 +26,14 @@ class DraftablePlayers extends React.Component {
 
         const theTeam = this.state.TeamDraftee;
 
-        function displayPlayers() {
-            var thePlayers = theTeam.map((theName, index) => <li className="playerName" key={index} value={index}>{index  + 1 + '. ' + theName}</li>)
-            var timer = setInterval(thePlayers, 1000);
-            console.log(timer)
-            if (thePlayers.length === 30) {
-                clearInterval(timer);
-            }
-        }
+        // for (var i = 0; i < theTeam.length; i++) {
+
+        //     function dispPlayers(team, index) {
+        //     return <li className="playerName" key={index} value={index}>{index + 1 + '. ' + team}</li>
+        //     }
+
+        //     return setInterval(dispPlayers(theTeam[i]), 2000)
+        // }
 
         const theTeam2 = this.state.TeamDraftee2;
 
@@ -46,7 +46,7 @@ class DraftablePlayers extends React.Component {
                     <div>
                         <ul>
                             <p className="first-round">1st Round</p>
-                            {displayPlayers()}
+                            {}
                         </ul>
                     </div>
                     <div>
