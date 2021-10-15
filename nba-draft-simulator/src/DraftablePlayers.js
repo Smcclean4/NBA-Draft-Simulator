@@ -27,11 +27,11 @@ class DraftablePlayers extends React.Component {
         const theTeam = this.state.TeamDraftee;
 
         const thePlayers = () => {
-            var theList = []
+            var theList = '<ul>'
             for (var i = 0; i < theTeam.length; i++) {
-                theList += theTeam[i]
+                theList += '<li>' + theTeam[i] + '</li>'
             }
-            return theList
+            return theList += '</ul>'
         }
 
         const theTeam2 = this.state.TeamDraftee2;
