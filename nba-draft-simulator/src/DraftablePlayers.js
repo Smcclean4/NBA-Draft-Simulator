@@ -26,17 +26,15 @@ class DraftablePlayers extends React.Component {
 
         const theTeam = this.state.TeamDraftee;
 
-        const thePlayers = () => {
-            var theList = '<ul>'
-            for (var i = 0; i < theTeam.length; i++) {
-                theList += '<li>' + theTeam[i] + '</li>'
-            }
-            return theList += '</ul>'
-        }
+        const thePlayersRd1 = []
+
+        theTeam.forEach((theName, index) => thePlayersRd1.push(<li className="playerName" key={index} value={index}>{index + 1 + '. ' + theName}</li>))
 
         const theTeam2 = this.state.TeamDraftee2;
 
-        const thePlayersRd2 = theTeam2.map((theName2, index) => <li className="playerName" key={index} value={index}>{index + theTeam.length + 1 + '. ' + theName2}</li>)
+        const thePlayersRd2 = []
+
+        theTeam2.forEach((theName2, index) => thePlayersRd2.push(<li className="playerName" key={index} value={index}>{index + theTeam.length + 1 + '. ' + theName2}</li>))
 
         return (
             <div className='drafted-players'>
@@ -45,7 +43,7 @@ class DraftablePlayers extends React.Component {
                     <div>
                         <ul>
                             <p className="first-round">1st Round</p>
-                            {thePlayers()}
+                            {thePlayersRd1}
                         </ul>
                     </div>
                     <div>
