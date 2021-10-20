@@ -28,7 +28,9 @@ class DraftablePlayers extends React.Component {
 
         const thePlayersRd1 = []
 
-        theTeam.forEach((theName, index) => thePlayersRd1.push(<li className="playerName" key={index} value={index}>{index + 1 + '. ' + theName}</li>))
+        theTeam.forEach((theName, index) => setTimeout(thePlayersRd1.push(<li className="playerName" key={index} value={index}>{index + 1 + '. ' + theName}</li>), index * 1000))
+
+        console.log(thePlayersRd1)
 
         const theTeam2 = this.state.TeamDraftee2;
 
