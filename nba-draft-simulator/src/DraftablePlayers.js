@@ -28,12 +28,20 @@ class DraftablePlayers extends React.Component {
 
         const thePlayersRd1 = []
 
-        theTeam.forEach((theName, index) => {
-            // is currently iteratiing through integers with the time. Solution?
-            // setTimeout(() => {
-            //     console.log(thePlayersRd1.push(<li className="playerName" key={index} value={index}>{`${index + 1}. ${theName}`}</li>))
-            // }, index * 2000)
-        })
+        const getTeam = () => {
+            const myPromise = new Promise((resolve, reject) => {
+                theTeam.forEach((theName, index) => {
+                    // is currently iteratiing through integers with the time. Solution?
+                    setTimeout(() => {
+                        resolve(thePlayersRd1.push(<li className="playerName" key={index} value={index}>{`${index + 1}. ${theName}`}</li>))
+                    }, index * 2000)
+                })
+            })
+            console.log(myPromise)
+            return myPromise
+        }
+
+        getTeam()
 
         const theTeam2 = this.state.TeamDraftee2;
 
