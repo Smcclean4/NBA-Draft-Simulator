@@ -27,19 +27,14 @@ class DraftablePlayers extends React.Component {
         const theTeam = this.state.TeamDraftee;
 
         const thePlayersRd1 = []
-        
-        // function getTeam() {
-        //    const interval = setInterval(function() {
-        //         theTeam.forEach((theName, index) => {
-        //             console.log(thePlayersRd1.push(<li className="playerName" key={index} value={index}>{`${index + 1}. ${theName}`}</li>)) 
-        //         })
-        //     }, 2000)
-        //     if (thePlayersRd1 === 29) {
-        //         clearInterval(interval)
-        //     }
-        // }
 
-        getTeam()
+        var intervalID = setInterval(function() {
+            
+            console.log(thePlayersRd1.push('money'))
+            if (thePlayersRd1.length === 30) {
+                clearInterval(intervalID)
+            }
+        }, 2000)
 
         console.log(thePlayersRd1)
 
