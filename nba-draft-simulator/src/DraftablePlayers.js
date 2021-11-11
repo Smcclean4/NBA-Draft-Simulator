@@ -27,21 +27,21 @@ class DraftablePlayers extends React.Component {
         const theTeam = this.state.TeamDraftee;
 
         const thePlayersRd1 = []
-
-        const getTeam = () => {
-            const myPromise = new Promise((resolve, reject) => {
-                theTeam.forEach((theName, index) => {
-                    // is currently iteratiing through integers with the time. Solution?
-                    setTimeout(() => {
-                        resolve(thePlayersRd1.push(<li className="playerName" key={index} value={index}>{`${index + 1}. ${theName}`}</li>))
-                    }, index * 2000)
-                })
-            })
-            console.log(myPromise)
-            return myPromise
-        }
+        
+        // function getTeam() {
+        //    const interval = setInterval(function() {
+        //         theTeam.forEach((theName, index) => {
+        //             console.log(thePlayersRd1.push(<li className="playerName" key={index} value={index}>{`${index + 1}. ${theName}`}</li>)) 
+        //         })
+        //     }, 2000)
+        //     if (thePlayersRd1 === 29) {
+        //         clearInterval(interval)
+        //     }
+        // }
 
         getTeam()
+
+        console.log(thePlayersRd1)
 
         const theTeam2 = this.state.TeamDraftee2;
 
