@@ -25,21 +25,25 @@ class DraftablePlayers extends React.Component {
     render() {
 
         const theTeam = this.state.TeamDraftee;
-
         const thePlayersRd1 = []
+        const interval = 2000;
+        var promise = Promise.resolve()
 
-        var intervalID = setInterval(function() {
-            
-            console.log(thePlayersRd1.push('money'))
-            if (thePlayersRd1.length === 30) {
-                clearInterval(intervalID)
-            }
-        }, 2000)
+        theTeam.forEach((theName, index) => {
+            // going to incorporate promises so javascript knows to execute this code
+            promise = promise.then(function() {
+                console.log(theName)
+                return new Promise(function(resolve) {
+                setTimeout(resolve, interval)
+                })
+            })
+        })
 
-        console.log(thePlayersRd1)
+        promise.then(function() {
+            console.log('Loop is finished... ')
+        })
 
         const theTeam2 = this.state.TeamDraftee2;
-
         const thePlayersRd2 = []
 
         theTeam2.forEach((theName2, index) => thePlayersRd2.push(<li className="playerName" key={index} value={index}>{`${index + 1 + theTeam.length}. ${theName2}`}</li>))
