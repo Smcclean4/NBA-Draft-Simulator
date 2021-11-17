@@ -25,13 +25,15 @@ class DraftablePlayers extends React.Component {
     render() {
 
         const theTeam = this.state.TeamDraftee;
-        const thePlayersRd1 = []
+        const thePlayersRd1 = [];
         const interval = 2000;
         var promise = Promise.resolve()
 
         theTeam.forEach((theName, index) => {
             // going to incorporate promises so javascript knows to execute this code
+            const teamLi = <li className='playerName' key={index} value={index}>{`${index + 1}. ${theName}`}</li>;
             promise = promise.then(function() {
+                thePlayersRd1.push(teamLi)
                 console.log(theName)
                 return new Promise(function(resolve) {
                 setTimeout(resolve, interval)
@@ -40,8 +42,10 @@ class DraftablePlayers extends React.Component {
         })
 
         promise.then(function() {
-            console.log('Loop is finished... ')
+            thePlayersRd1.push('money')
         })
+
+        // can push into players rd 1 from outside of foreach??
 
         const theTeam2 = this.state.TeamDraftee2;
         const thePlayersRd2 = []
