@@ -35,6 +35,7 @@ class DraftablePlayers extends React.Component {
             promise = promise.then(function() {
                 thePlayersRd1.push(teamLi)
                 console.log(theName)
+                console.log(thePlayersRd1)
                 return new Promise(function(resolve) {
                 setTimeout(resolve, interval)
                 })
@@ -42,10 +43,8 @@ class DraftablePlayers extends React.Component {
         })
 
         promise.then(function() {
-            thePlayersRd1.push('money')
+            console.log(thePlayersRd1)
         })
-
-        // can push into players rd 1 from outside of foreach??
 
         const theTeam2 = this.state.TeamDraftee2;
         const thePlayersRd2 = []
