@@ -25,26 +25,19 @@ class DraftablePlayers extends React.Component {
     render() {
 
         const theTeam = this.state.TeamDraftee;
-        const thePlayersRd1 = [];
+        var thePlayersRd1 = [];
         const interval = 2000;
         var promise = Promise.resolve()
 
         theTeam.forEach((theName, index) => {
-            // going to incorporate promises so javascript knows to execute this code
-            const teamLi = <li className='playerName' key={index} value={index}>{`${index + 1}. ${theName}`}</li>;
-            promise = promise.then(function() {
-                thePlayersRd1.push(teamLi)
-                console.log(theName)
-                console.log(thePlayersRd1)
-                return new Promise(function(resolve) {
-                setTimeout(resolve, interval)
-                })
-            })
+            var tl = <li className="playerName" key={index} value={index}>{`${index + 1}. ${theName}`}</li>
+            setTimeout(function() {
+                return thePlayersRd1.push(tl)
+            }, index * 2000)
         })
+        // playerrd1 changes inside but not outside forEach?
 
-        promise.then(function() {
-            console.log(thePlayersRd1)
-        })
+        console.log(thePlayersRd1)
 
         const theTeam2 = this.state.TeamDraftee2;
         const thePlayersRd2 = []
