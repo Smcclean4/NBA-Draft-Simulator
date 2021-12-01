@@ -15,14 +15,18 @@ class DraftablePlayers extends React.Component {
         this.state = {
         count: 0,
 
-        TeamDraftee: [],
+        TeamDraftee: ["Cade Cunningham", "Jalen Green", "Evan Mobley", "Scottie Barnes", "Jalen Suggs", "Josh Giddey", "Jonathan Kuminga", "Franz Wagner", "Davion Mitchell", "Ziaire Williams", "James Bouknight", "Joshua Primo", "Chris Duarte", "Moses Moody", "Corey Kispert", "Alperen Sengun", "Trey Murphy", "Tre Mann", "Kai Jones", "Jalen Johnson", "Keon Johnson", "Isaiah Jackson", "Usman Garuba", "Josh Christopher", "Quentin Grimes", "Nah’Shon Hyland", "Cameron Thomas", "Jaden Springer", "Day’Ron Sharpe", "Santi Aldama"],
 
-        TeamDraftee2: []
+        TeamDraftee2: ["Isaiah Todd", "Jeremiah Robinson-Earl", "Jason Preston", "Rokas Jokubaitis", "Herbert Jones", "Miles McBride", "JT Thor", "Ayo Dosunmu", "Neemias Queta", "Jared Butler", "Joe Wieskamp", "Isaiah Livers", "Greg Brown", "Kessler Edwards", "Juhann Begarin", "Dalano Banton", "David Johnson", "Sharife Cooper", "Marcus Zegarowski", "Filip Petrusev", "BJ Boston", "Luka Garza", "Charles Bassey", "Sandro Mamukelashvili", "Aaron Wiggins", "Scottie Lewis", "Balsa Koprivica", "Jericho Sims", "RaiQuan Gray", "Georgios Kalaitzakis"]
         }
 
     }
 
     render() {
+        var players1 = []
+        this.state.TeamDraftee.forEach((theName, index) => {
+            players1.push(<li className="playerName" key={index} value={index}>{`${index + 1 + '.'} ${theName}`}</li>)
+        })
         return (
             <div className='drafted-players'>
                 <p>Drafted Players</p>
@@ -30,7 +34,7 @@ class DraftablePlayers extends React.Component {
                     <div>
                         <ul>
                             <p className="first-round">1st Round</p>
-                            {}
+                            {players1}
                         </ul>
                     </div>
                     <div>
