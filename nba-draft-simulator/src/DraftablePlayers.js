@@ -25,7 +25,9 @@ class DraftablePlayers extends React.Component {
     render() {
         var players1 = []
         this.state.TeamDraftee.forEach((theName, index) => {
-            players1.push(<li className="playerName" key={index} value={index}>{`${index + 1 + '.'} ${theName}`}</li>)
+            let myPromise = new Promise(function(resolve, reject) {
+                
+            })
         })
         return (
             <div className='drafted-players'>
