@@ -19,9 +19,9 @@ class DraftablePlayers extends React.Component {
 
         TeamDraftee2: ["Isaiah Todd", "Jeremiah Robinson-Earl", "Jason Preston", "Rokas Jokubaitis", "Herbert Jones", "Miles McBride", "JT Thor", "Ayo Dosunmu", "Neemias Queta", "Jared Butler", "Joe Wieskamp", "Isaiah Livers", "Greg Brown", "Kessler Edwards", "Juhann Begarin", "Dalano Banton", "David Johnson", "Sharife Cooper", "Marcus Zegarowski", "Filip Petrusev", "BJ Boston", "Luka Garza", "Charles Bassey", "Sandro Mamukelashvili", "Aaron Wiggins", "Scottie Lewis", "Balsa Koprivica", "Jericho Sims", "RaiQuan Gray", "Georgios Kalaitzakis"]
         }
-
     }
-
+    // trying to uderstand how I can implement promises into my forEach and setTimeout objects
+    // in order to display players after 3 second delay into an <li> in players section.
     render() {
         
         return (
