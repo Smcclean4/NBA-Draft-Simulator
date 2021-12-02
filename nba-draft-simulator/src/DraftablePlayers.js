@@ -23,12 +23,7 @@ class DraftablePlayers extends React.Component {
     }
 
     render() {
-        var players1 = []
-        this.state.TeamDraftee.forEach((theName, index) => {
-            let myPromise = new Promise(function(resolve, reject) {
-                
-            })
-        })
+        
         return (
             <div className='drafted-players'>
                 <p>Drafted Players</p>
@@ -36,7 +31,7 @@ class DraftablePlayers extends React.Component {
                     <div>
                         <ul>
                             <p className="first-round">1st Round</p>
-                            {players1}
+                            {}
                         </ul>
                     </div>
                     <div>
